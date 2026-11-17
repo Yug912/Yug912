@@ -17,7 +17,7 @@ I like problems that won't leave my head until they're solved, whether that's a 
 
 <br/>
 
-<img src="assets/departures.svg" alt="Departures board of projects: LeetHint (live), PreBuy IQ (rebuilding), CookQuest, Spotify Clone" width="100%"/>
+<img src="assets/departures.svg" alt="Departures board of projects: LeetHint (live), PreBuy IQ (rebuilding), CookQuest" width="100%"/>
 
 <details>
 <summary><b>&nbsp;YT 101 · LeetHint</b> — the hint ladder LeetCode never built</summary>
@@ -42,13 +42,6 @@ Built for VoyageHack 4.0 by TBO.com. It decides which travel inventory to pre-bu
 <br/>
 
 Search and explore recipes from a live API. · [Board this flight →](https://github.com/Yug912/CookQuest-Recipe-Explorer)
-</details>
-
-<details>
-<summary><b>&nbsp;YT 104 · Spotify Clone</b> — music player interface</summary>
-<br/>
-
-A Spotify-style player built from scratch in plain JavaScript. · [Board this flight →](https://github.com/Yug912/SPOTIFY-CLONE)
 </details>
 
 <br/>

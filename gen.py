@@ -19,7 +19,6 @@ DEPARTURES = [
     ("YT 101", "LEETHINT",      "AI hint ladder for LeetCode",      "JS · GEMINI · CLOUDFLARE", "EXT", "LIVE",       "live"),
     ("YT 102", "PREBUY IQ",     "Travel inventory optimizer",       "PYTHON · ML",              "AI",  "REBUILDING", "work"),
     ("YT 103", "COOKQUEST",     "Recipe explorer with live search", "JAVASCRIPT · REST API",    "WEB", "ARRIVED",    "done"),
-    ("YT 104", "SPOTIFY CLONE", "Music player interface",           "JS · HTML · CSS",          "WEB", "ARRIVED",    "done"),
 ]
 
 # event, organiser, project/team, status, kind
