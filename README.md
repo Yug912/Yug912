@@ -7,6 +7,8 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/yug-thakral-a38252317/"><img src="https://img.shields.io/badge/LINKEDIN-161b22?style=for-the-badge&logo=linkedin&logoColor=58A6FF&labelColor=161b22" alt="LinkedIn"/></a>
   <a href="https://codolio.com/profile/Yug_Thakral"><img src="https://img.shields.io/badge/CODOLIO-161b22?style=for-the-badge&logo=codeforces&logoColor=58A6FF&labelColor=161b22" alt="Codolio"/></a>
+  <a href="https://leetcode.com/u/YUG_THAKRAL_18/"><img src="https://img.shields.io/badge/LEETCODE-161b22?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=161b22" alt="LeetCode"/></a>
+  <a href="https://codeforces.com/profile/Yug18"><img src="https://img.shields.io/badge/CODEFORCES-161b22?style=for-the-badge&logo=codeforces&logoColor=58A6FF&labelColor=161b22" alt="Codeforces"/></a>
   <a href="https://github.com/Yug912?tab=repositories"><img src="https://img.shields.io/badge/ALL%20ROUTES-161b22?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=161b22" alt="Repositories"/></a>
 </p>
 
