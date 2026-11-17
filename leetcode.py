@@ -1,7 +1,7 @@
 """Draw assets/leetcode.svg: daily LeetCode submissions for the last 31 days,
 styled to match the GitHub "FLIGHT LOG" activity graph in the README.
 
-Run:  python3 leetcode.py          (refreshed daily by .github/workflows/charts.yml)
+Run:  python3 leetcode.py          (refreshed daily by .github/workflows/leetcode.yml)
 """
 import datetime as dt, json, math, os, sys, urllib.request
 
