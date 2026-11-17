@@ -16,7 +16,7 @@
 
 <br/>
 
-<img src="board/departures.svg" alt="Departures board of projects: LeetHint (live), PreBuy IQ (rebuilding), CookQuest" width="100%"/>
+<img src="board/departures.svg" alt="Departures board of projects: LeetHint (live), Kurukshetra (building), CookQuest" width="100%"/>
 
 <details>
 <summary><b>&nbsp;YT 101 · LeetHint</b> — the hint ladder LeetCode never built</summary>
@@ -28,12 +28,12 @@ A browser extension that unlocks hints one rung at a time instead of handing you
 </details>
 
 <details>
-<summary><b>&nbsp;YT 102 · PreBuy IQ</b> — smarter pre-buying for travel inventory</summary>
+<summary><b>&nbsp;YT 102 · Kurukshetra</b> — a bug-hunting simulator for distributed systems</summary>
 <br/>
 
-Built for VoyageHack 4.0 by TBO.com. It decides which travel inventory to pre-buy within a budget, and it's now being rebuilt on real datasets.
+Runs a small Docker cluster under a controller that owns the network, injects faults (dropped or delayed messages, partitions, crashes, clock skew) from a single seed, then checks the history for consistency bugs, shrinks failing runs and replays them on a React timeline.
 
-`Python` `Machine Learning` · <!-- TODO: add PreBuy IQ repo link -->
+`Go` `Docker` `React` · [Board this flight →](https://github.com/Yug912/Kurukshetra-A-Bug-Hunting-Simulator-for-Distributed-Systems)
 </details>
 
 <details>

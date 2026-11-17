@@ -17,7 +17,7 @@ TICKER = ("1990 PROBLEMS SOLVED   ★   LEETCODE KNIGHT · 1931   ★   500-DAY 
 # flight, destination, description, via, gate, status, status_kind (live|work|done)
 DEPARTURES = [
     ("YT 101", "LEETHINT",      "AI hint ladder for LeetCode",      "JS · GEMINI · CLOUDFLARE", "EXT", "LIVE",       "live"),
-    ("YT 102", "PREBUY IQ",     "Travel inventory optimizer",       "PYTHON · ML",              "AI",  "REBUILDING", "work"),
+    ("YT 102", "KURUKSHETRA",   "Bug-hunting sim for distributed systems", "GO · DOCKER · REACT", "SYS", "BUILDING", "work"),
     ("YT 103", "COOKQUEST",     "Recipe explorer with live search", "JAVASCRIPT · REST API",    "WEB", "ARRIVED",    "done"),
 ]
 

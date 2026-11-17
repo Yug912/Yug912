@@ -21,11 +21,11 @@
 <circle cx="970" cy="148" r="6" fill="#3FB950" class="blink"/><text x="986" y="154" font-size="17" fill="#3FB950" letter-spacing="2">LIVE</text>
 <line x1="0" y1="186" x2="1200" y2="186" stroke="#30363d"/>
 <text x="40" y="232" font-size="18" fill="#8B949E">YT 102</text>
-<text x="170" y="224" font-size="26" fill="#A371F7" letter-spacing="2">PREBUY IQ</text>
-<text x="170" y="248" font-size="14" fill="#8B949E" font-weight="400">Travel inventory optimizer</text>
-<text x="560" y="232" font-size="15" fill="#E6EDF3" letter-spacing="1">PYTHON · ML</text>
-<rect x="846" y="210" width="64" height="30" rx="6" fill="#21262d" stroke="#A371F7" stroke-opacity=".6"/><text x="878" y="231" font-size="15" fill="#A371F7" text-anchor="middle">AI</text>
-<circle cx="970" cy="226" r="6" fill="#58A6FF" class="blink"/><text x="986" y="232" font-size="17" fill="#58A6FF" letter-spacing="2">REBUILDING</text>
+<text x="170" y="224" font-size="26" fill="#A371F7" letter-spacing="2">KURUKSHETRA</text>
+<text x="170" y="248" font-size="14" fill="#8B949E" font-weight="400">Bug-hunting sim for distributed systems</text>
+<text x="560" y="232" font-size="15" fill="#E6EDF3" letter-spacing="1">GO · DOCKER · REACT</text>
+<rect x="846" y="210" width="64" height="30" rx="6" fill="#21262d" stroke="#A371F7" stroke-opacity=".6"/><text x="878" y="231" font-size="15" fill="#A371F7" text-anchor="middle">SYS</text>
+<circle cx="970" cy="226" r="6" fill="#58A6FF" class="blink"/><text x="986" y="232" font-size="17" fill="#58A6FF" letter-spacing="2">BUILDING</text>
 <rect x="0" y="264" width="1200" height="78" fill="#11161d"/>
 <line x1="0" y1="264" x2="1200" y2="264" stroke="#30363d"/>
 <text x="40" y="310" font-size="18" fill="#8B949E">YT 103</text>
