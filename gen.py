@@ -4,7 +4,7 @@ Edit the DATA section and re-run:  python3 gen.py
 """
 import os, random, html
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "board")
 os.makedirs(OUT, exist_ok=True)
 
 # ---------------------------------------------------------------- DATA

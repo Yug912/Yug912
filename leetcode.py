@@ -1,4 +1,4 @@
-"""Draw assets/leetcode.svg: daily LeetCode submissions for the last 31 days,
+"""Draw board/leetcode.svg: daily LeetCode submissions for the last 31 days,
 styled to match the GitHub "FLIGHT LOG" activity graph in the README.
 
 Run:  python3 leetcode.py          (refreshed daily by .github/workflows/leetcode.yml)
@@ -8,7 +8,7 @@ import datetime as dt, json, math, os, sys, urllib.request
 USERNAME = "YUG_THAKRAL_18"
 DAYS = 31
 TITLE = "LEETCODE LOG · LAST 31 DAYS"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "leetcode.svg")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "board", "leetcode.svg")
 
 BG, ACCENT, WHITE, GREY = "#0d1117", "#58A6FF", "#E6EDF3", "#8B949E"
 FONT = "'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif"
