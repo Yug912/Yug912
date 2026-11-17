@@ -76,8 +76,9 @@ def render(days, counts):
         c1 = (x1 + (x2 - x0) / 6, clamp(y1 + (y2 - y0) / 6))
         c2 = (x2 - (x3 - x1) / 6, clamp(y2 - (y3 - y1) / 6))
         path += f" C{c1[0]:.1f},{c1[1]:.1f} {c2[0]:.1f},{c2[1]:.1f} {x2:.1f},{y2:.1f}"
-    out.append(f'<path d="{path} L{xs[-1]:.1f},{B} L{xs[0]:.1f},{B}Z" fill="{ACCENT}" fill-opacity=".1"/>')
-    out.append(f'<path d="{path}" fill="none" stroke="{ACCENT}" stroke-width="4" stroke-linejoin="round"/>')
+    out.append(f'<path d="{path} L{xs[-1]:.1f},{B} L{xs[0]:.1f},{B}Z" fill="url(#lg)" fill-opacity=".12"/>')
+    out.append(f'<linearGradient id="lg" gradientUnits="userSpaceOnUse" x1="{L}" x2="{R}"><stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="#A371F7"/></linearGradient>')
+    out.append(f'<path d="{path}" fill="none" stroke="url(#lg)" stroke-width="4" stroke-linejoin="round"/>')
     for x, y, d, c in zip(xs, ys, days, counts):
         out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="{WHITE}"><title>{d:%b %d}: {c}</title></circle>')
 

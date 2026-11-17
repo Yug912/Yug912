@@ -170,7 +170,7 @@
 @keyframes gs31_2{0%,26.49%{opacity:0}26.50%,27.08%{opacity:1}27.09%,100%{opacity:0}}.gs31_2{opacity:0;animation:gs31_2 12s linear infinite}
 @keyframes tk1{from{transform:translateX(0)}to{transform:translateX(-2599.2px)}}.tk1{animation:tk1 47.3s linear infinite}</style>
 <rect width="1200" height="440" rx="18" fill="#0d1117"/>
-<path d="M18 0 H1182 Q1200 0 1200 18 V64 H0 V18 Q0 0 18 0Z" fill="#161b22"/><circle cx="36" cy="32" r="6" fill="#3FB950" class="blink"/><text x="56" y="41" font-size="22" fill="#E6EDF3" letter-spacing="6">NOW BOARDING</text><text x="1168" y="40" font-size="15" fill="#8B949E" text-anchor="end" letter-spacing="3">TERMINAL GITHUB · PLATFORM 912</text>
+<linearGradient id="hg" gradientUnits="userSpaceOnUse" x1="56" x2="320"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient><path d="M18 0 H1182 Q1200 0 1200 18 V64 H0 V18 Q0 0 18 0Z" fill="#161b22"/><circle cx="36" cy="32" r="6" fill="#3FB950" class="blink"/><text x="56" y="41" font-size="22" fill="url(#hg)" letter-spacing="6">NOW BOARDING</text><text x="1168" y="40" font-size="15" fill="#8B949E" text-anchor="end" letter-spacing="3">TERMINAL GITHUB · PLATFORM 912</text>
 <rect x="109.0" y="104" width="82" height="112" rx="4" fill="#21262d"/>
 <rect x="109.0" y="104" width="82" height="56.0" rx="4" fill="#ffffff" opacity=".035"/>
 <text class="nf0" x="150.0" y="187.4" font-size="76" fill="#E6EDF3" text-anchor="middle">Y</text>

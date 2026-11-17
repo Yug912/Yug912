@@ -48,6 +48,10 @@ GATES = [("A1", "C++"), ("A2", "PYTHON"), ("A3", "JAVASCRIPT"), ("A4", "TYPESCRI
 BG, PANEL, TILE = "#0d1117", "#161b22", "#21262d"
 ACCENT, WHITE, GREY, LINE = "#58A6FF", "#E6EDF3", "#8B949E", "#30363d"
 GREEN, ROW = "#3FB950", "#11161d"
+VIOLET, PINK, CYAN, ORANGE, GOLD = "#A371F7", "#F778BA", "#39C5CF", "#F0883E", "#E3B341"
+PALETTE = [ACCENT, VIOLET, PINK, CYAN, GREEN, ORANGE]   # cycled across rows, gates and scores
+# per-platform colours on the scoreboard (brand-ish)
+SCORE_COLORS = [WHITE, "#FFA116", "#58A6FF", "#D0A26B", VIOLET]
 TICKER_FROM, TICKER_TO = "#58A6FF", "#A371F7"   # the one bright band: the moving ticker
 FONT = "'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Courier New',monospace"
 GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@%&"
@@ -105,14 +109,16 @@ def ticker(text, y, w, fs, color, uid, speed=55, x_pad=0, h=None):
 
 
 def board_header(w, title, right, y=0):
-    return (f'<rect x="0" y="{y}" width="{w}" height="64" fill="{PANEL}"/>'
+    return (f'<linearGradient id="hg" gradientUnits="userSpaceOnUse" x1="56" x2="{56 + len(title) * 22}">'
+            f'<stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="{VIOLET}"/></linearGradient>'
+            f'<rect x="0" y="{y}" width="{w}" height="64" fill="{PANEL}"/>'
             f'<circle cx="36" cy="{y+32}" r="6" fill="{GREEN}" class="blink"/>'
-            f'<text x="56" y="{y+41}" font-size="22" fill="{WHITE}" letter-spacing="6">{e(title)}</text>'
+            f'<text x="56" y="{y+41}" font-size="22" fill="url(#hg)" letter-spacing="6">{e(title)}</text>'
             f'<text x="{w-32}" y="{y+40}" font-size="15" fill="{GREY}" text-anchor="end" letter-spacing="3">{e(right)}</text>')
 
 
 def status_cell(x, y, label, kind):
-    col = {"live": GREEN, "work": ACCENT, "done": GREY, "win": GREEN, "place": ACCENT}[kind]
+    col = {"live": GREEN, "work": ACCENT, "done": GREY, "win": GOLD, "place": VIOLET}[kind]
     cls = ' class="blink"' if kind in ("live", "work") else ""
     return (f'<circle cx="{x}" cy="{y-6}" r="6" fill="{col}"{cls}/>'
             f'<text x="{x+16}" y="{y}" font-size="{17 if len(label) < 12 else 15}" fill="{col}" letter-spacing="2">{e(label)}</text>')
@@ -168,11 +174,11 @@ def departures():
             b.append(f'<rect x="0" y="{y}" width="{W}" height="{rowh}" fill="{ROW}"/>')
         b.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="{LINE}"/>')
         b.append(f'<text x="40" y="{y+46}" font-size="18" fill="{GREY}">{fl}</text>')
-        b.append(f'<text x="170" y="{y+38}" font-size="26" fill="{WHITE}" letter-spacing="2">{e(dest)}</text>')
+        b.append(f'<text x="170" y="{y+38}" font-size="26" fill="{PALETTE[i % len(PALETTE)]}" letter-spacing="2">{e(dest)}</text>')
         b.append(f'<text x="170" y="{y+62}" font-size="14" fill="{GREY}" font-weight="400">{e(desc)}</text>')
         b.append(f'<text x="560" y="{y+46}" font-size="15" fill="{WHITE}" letter-spacing="1">{e(via)}</text>')
-        b.append(f'<rect x="846" y="{y+24}" width="64" height="30" rx="6" fill="{TILE}" stroke="{LINE}"/>'
-                 f'<text x="878" y="{y+45}" font-size="15" fill="{ACCENT}" text-anchor="middle">{gate}</text>')
+        b.append(f'<rect x="846" y="{y+24}" width="64" height="30" rx="6" fill="{TILE}" stroke="{PALETTE[i % len(PALETTE)]}" stroke-opacity=".6"/>'
+                 f'<text x="878" y="{y+45}" font-size="15" fill="{PALETTE[i % len(PALETTE)]}" text-anchor="middle">{gate}</text>')
         b.append(status_cell(970, y + 46, st, kind))
     b.append("</g>")
     open(f"{OUT}/departures.svg", "w").write(svg(W, H, "\n".join(b)))
@@ -215,10 +221,11 @@ def scoreboard():
         tw, gap = 44, 6
         total = len(txt) * (tw + gap) - gap
         x0 = cx + (cw - total) / 2
-        t, c = flap_tiles(txt, x0, 100, tw, 64, gap, 40, 12, 0.6 + k * 0.4, 0.1, uid=f"sc{k}")
+        col = SCORE_COLORS[k % len(SCORE_COLORS)]
+        t, c = flap_tiles(txt, x0, 100, tw, 64, gap, 40, 12, 0.6 + k * 0.4, 0.1, color=col, uid=f"sc{k}")
         b.append(t); css.append(c)
         b.append(f'<text x="{cx+cw/2:.1f}" y="200" font-size="15" fill="{WHITE}" text-anchor="middle" letter-spacing="3">{e(lab)}</text>')
-        b.append(f'<text x="{cx+cw/2:.1f}" y="224" font-size="12" fill="{ACCENT}" text-anchor="middle" letter-spacing="1">{e(sub)}</text>')
+        b.append(f'<text x="{cx+cw/2:.1f}" y="224" font-size="12" fill="{col if k else ACCENT}" text-anchor="middle" letter-spacing="1">{e(sub)}</text>')
         if k:
             b.append(f'<line x1="{cx:.1f}" y1="96" x2="{cx:.1f}" y2="234" stroke="{LINE}"/>')
     b.append(f'<line x1="40" y1="258" x2="{W-40}" y2="258" stroke="{LINE}"/>')
@@ -242,7 +249,7 @@ def gates():
         x, y = 40 + c * (gw + 16), 94 + r * 84
         b.append(f'<rect x="{x:.1f}" y="{y}" width="{gw:.1f}" height="64" rx="8" fill="{TILE}" stroke="{LINE}"/>')
         b.append(f'<line x1="{x+72:.1f}" y1="{y+14}" x2="{x+72:.1f}" y2="{y+50}" stroke="{LINE}"/>')
-        b.append(f'<text x="{x+36:.1f}" y="{y+42}" font-size="22" fill="{ACCENT}" text-anchor="middle">{code}</text>')
+        b.append(f'<text x="{x+36:.1f}" y="{y+42}" font-size="22" fill="{PALETTE[i % len(PALETTE)]}" text-anchor="middle">{code}</text>')
         b.append(f'<text x="{x+92:.1f}" y="{y+41}" font-size="20" fill="{WHITE}">{e(name)}</text>')
         b.append(f'<text x="{x+gw-20:.1f}" y="{y+42}" font-size="22" fill="{GREY}" text-anchor="end">→</text>')
     b.append("</g>")

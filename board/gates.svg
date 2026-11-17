@@ -5,7 +5,7 @@
 </style>
 <rect width="1200" height="282" rx="18" fill="#0d1117"/>
 <clipPath id="c"><rect width="1200" height="282" rx="18"/></clipPath><g clip-path="url(#c)">
-<rect x="0" y="0" width="1200" height="64" fill="#161b22"/><circle cx="36" cy="32" r="6" fill="#3FB950" class="blink"/><text x="56" y="41" font-size="22" fill="#E6EDF3" letter-spacing="6">GATES</text><text x="1168" y="40" font-size="15" fill="#8B949E" text-anchor="end" letter-spacing="3">TOOLKIT · ALL GATES OPEN</text>
+<linearGradient id="hg" gradientUnits="userSpaceOnUse" x1="56" x2="166"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient><rect x="0" y="0" width="1200" height="64" fill="#161b22"/><circle cx="36" cy="32" r="6" fill="#3FB950" class="blink"/><text x="56" y="41" font-size="22" fill="url(#hg)" letter-spacing="6">GATES</text><text x="1168" y="40" font-size="15" fill="#8B949E" text-anchor="end" letter-spacing="3">TOOLKIT · ALL GATES OPEN</text>
 <rect x="40.0" y="94" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="112.0" y1="108" x2="112.0" y2="144" stroke="#30363d"/>
 <text x="76.0" y="136" font-size="22" fill="#58A6FF" text-anchor="middle">A1</text>
@@ -13,27 +13,27 @@
 <text x="288.0" y="136" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="324.0" y="94" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="396.0" y1="108" x2="396.0" y2="144" stroke="#30363d"/>
-<text x="360.0" y="136" font-size="22" fill="#58A6FF" text-anchor="middle">A2</text>
+<text x="360.0" y="136" font-size="22" fill="#A371F7" text-anchor="middle">A2</text>
 <text x="416.0" y="135" font-size="20" fill="#E6EDF3">PYTHON</text>
 <text x="572.0" y="136" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="608.0" y="94" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="680.0" y1="108" x2="680.0" y2="144" stroke="#30363d"/>
-<text x="644.0" y="136" font-size="22" fill="#58A6FF" text-anchor="middle">A3</text>
+<text x="644.0" y="136" font-size="22" fill="#F778BA" text-anchor="middle">A3</text>
 <text x="700.0" y="135" font-size="20" fill="#E6EDF3">JAVASCRIPT</text>
 <text x="856.0" y="136" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="892.0" y="94" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="964.0" y1="108" x2="964.0" y2="144" stroke="#30363d"/>
-<text x="928.0" y="136" font-size="22" fill="#58A6FF" text-anchor="middle">A4</text>
+<text x="928.0" y="136" font-size="22" fill="#39C5CF" text-anchor="middle">A4</text>
 <text x="984.0" y="135" font-size="20" fill="#E6EDF3">TYPESCRIPT</text>
 <text x="1140.0" y="136" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="40.0" y="178" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="112.0" y1="192" x2="112.0" y2="228" stroke="#30363d"/>
-<text x="76.0" y="220" font-size="22" fill="#58A6FF" text-anchor="middle">B1</text>
+<text x="76.0" y="220" font-size="22" fill="#3FB950" text-anchor="middle">B1</text>
 <text x="132.0" y="219" font-size="20" fill="#E6EDF3">DJANGO</text>
 <text x="288.0" y="220" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="324.0" y="178" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="396.0" y1="192" x2="396.0" y2="228" stroke="#30363d"/>
-<text x="360.0" y="220" font-size="22" fill="#58A6FF" text-anchor="middle">B2</text>
+<text x="360.0" y="220" font-size="22" fill="#F0883E" text-anchor="middle">B2</text>
 <text x="416.0" y="219" font-size="20" fill="#E6EDF3">HTML / CSS</text>
 <text x="572.0" y="220" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="608.0" y="178" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
@@ -43,7 +43,7 @@
 <text x="856.0" y="220" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 <rect x="892.0" y="178" width="268.0" height="64" rx="8" fill="#21262d" stroke="#30363d"/>
 <line x1="964.0" y1="192" x2="964.0" y2="228" stroke="#30363d"/>
-<text x="928.0" y="220" font-size="22" fill="#58A6FF" text-anchor="middle">B4</text>
+<text x="928.0" y="220" font-size="22" fill="#A371F7" text-anchor="middle">B4</text>
 <text x="984.0" y="219" font-size="20" fill="#E6EDF3">CLOUDFLARE</text>
 <text x="1140.0" y="220" font-size="22" fill="#8B949E" text-anchor="end">→</text>
 </g>
