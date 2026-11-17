@@ -54,7 +54,7 @@ Search and explore recipes from a live API. · [Board this flight →](https://g
 
 <br/><br/>
 
-<img src="assets/gates.svg" alt="Toolkit as airport gates: C++, Python, JavaScript, TypeScript, Rust, HTML/CSS, Gemini API, Cloudflare" width="100%"/>
+<img src="assets/gates.svg" alt="Toolkit as airport gates: C++, Python, JavaScript, TypeScript, Django, HTML/CSS, Gemini API, Cloudflare" width="100%"/>
 
 <br/><br/>
 

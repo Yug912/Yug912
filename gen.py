@@ -42,7 +42,7 @@ SCOREBOARD = [  # label, value, sub-label
 SCORE_FOOT = "1186 LEETCODE · 591 CODEFORCES · 139 CODECHEF · 74 GFG   │   EASY 371 · MEDIUM 772 · HARD 116"
 
 GATES = [("A1", "C++"), ("A2", "PYTHON"), ("A3", "JAVASCRIPT"), ("A4", "TYPESCRIPT"),
-         ("B1", "RUST"), ("B2", "HTML / CSS"), ("B3", "GEMINI API"), ("B4", "CLOUDFLARE")]
+         ("B1", "DJANGO"), ("B2", "HTML / CSS"), ("B3", "GEMINI API"), ("B4", "CLOUDFLARE")]
 
 # ---------------------------------------------------------------- STYLE
 BG, PANEL, TILE = "#0b0c0e", "#131418", "#1c1d22"
