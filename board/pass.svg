@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="352" viewBox="0 0 1200 352" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Courier New',monospace" font-weight="700">
+<style>
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.15}}
+.blink{animation:blink 1.2s steps(1) infinite}
+</style>
+<mask id="m"><rect width="1200" height="352" fill="#fff"/><circle cx="900" cy="0" r="16" fill="#000"/><circle cx="900" cy="352" r="16" fill="#000"/></mask>
+<linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="40" x2="420"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
+<linearGradient id="hg" gradientUnits="userSpaceOnUse" x1="0" x2="1200"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#A371F7"/></linearGradient>
+<clipPath id="r"><rect width="1200" height="352" rx="18"/></clipPath>
+<g mask="url(#m)"><g clip-path="url(#r)"><rect width="1200" height="352" fill="#0d1117"/>
+<rect width="1200" height="6" fill="url(#hg)"/>
+<rect x="900" y="6" width="300" height="346" fill="#161b22"/>
+<line x1="900" y1="24" x2="900" y2="328" stroke="#30363d" stroke-width="2" stroke-dasharray="6 7"/>
+<circle cx="46" cy="44" r="6" fill="#3FB950" class="blink"/><text x="62" y="51" font-size="18" fill="#E6EDF3" letter-spacing="6">BOARDING PASS</text><text x="860" y="50" font-size="13" fill="#8B949E" text-anchor="end" letter-spacing="3">PLATFORM 912 → WHEREVER IT SHIPS</text>
+<text x="40" y="100" font-size="12" fill="#8B949E" letter-spacing="3">PASSENGER</text>
+<text x="40" y="136" font-size="34" fill="url(#pg)" letter-spacing="4">YUG THAKRAL</text>
+<text x="40" y="176" font-size="12" fill="#8B949E" letter-spacing="3">FROM</text>
+<text x="40" y="200" font-size="17" fill="#E6EDF3" letter-spacing="1">JIIT NOIDA · B.TECH CSE</text>
+<text x="370" y="176" font-size="12" fill="#8B949E" letter-spacing="3">CREW</text>
+<text x="370" y="200" font-size="17" fill="#E6EDF3" letter-spacing="1">TECH LEAD · RAPID PROGRAMMING HUB</text>
+<text x="40" y="236" font-size="12" fill="#8B949E" letter-spacing="3">CLEARANCES</text>
+<rect x="40.0" y="248" width="158.0" height="30" rx="15" fill="#FFA116" fill-opacity=".12" stroke="#FFA116" stroke-opacity=".55"/><text x="119.0" y="268" font-size="13" fill="#FFA116" text-anchor="middle" letter-spacing="1">LEETCODE KNIGHT</text>
+<rect x="210.0" y="248" width="246.0" height="30" rx="15" fill="#58A6FF" fill-opacity=".12" stroke="#58A6FF" stroke-opacity=".55"/><text x="333.0" y="268" font-size="13" fill="#58A6FF" text-anchor="middle" letter-spacing="1">CF SPECIALIST · PEAK 1424</text>
+<rect x="468.0" y="248" width="122.8" height="30" rx="15" fill="#D0A26B" fill-opacity=".12" stroke="#D0A26B" stroke-opacity=".55"/><text x="529.4" y="268" font-size="13" fill="#D0A26B" text-anchor="middle" letter-spacing="1">CODECHEF 3★</text>
+<rect x="602.8" y="248" width="210.8" height="30" rx="15" fill="#A371F7" fill-opacity=".12" stroke="#A371F7" stroke-opacity=".55"/><text x="708.2" y="268" font-size="13" fill="#A371F7" text-anchor="middle" letter-spacing="1">GRID 8.0 SEMIFINALIST</text>
+<text x="40" y="310" font-size="14" fill="#8B949E" font-weight="400" xml:space="preserve">“I like problems that won&#x27;t leave my head until they&#x27;re solved —</text>
+<text x="40" y="331" font-size="14" fill="#8B949E" font-weight="400" xml:space="preserve">a contest at midnight or a product that has to ship by Sunday.”</text>
+<text x="936" y="52" font-size="12" fill="#8B949E" letter-spacing="3">FLIGHT</text>
+<text x="936" y="80" font-size="22" fill="#58A6FF" letter-spacing="2">YT 912</text>
+<text x="1066" y="52" font-size="12" fill="#8B949E" letter-spacing="3">GATE</text>
+<text x="1066" y="80" font-size="22" fill="#A371F7" letter-spacing="2">A1</text>
+<text x="936" y="124" font-size="12" fill="#8B949E" letter-spacing="3">BOARDS</text>
+<text x="936" y="152" font-size="22" fill="#F778BA" letter-spacing="2">00:00</text>
+<text x="1066" y="124" font-size="12" fill="#8B949E" letter-spacing="3">CLASS</text>
+<text x="1066" y="152" font-size="22" fill="#39C5CF" letter-spacing="2">KNIGHT</text>
+<rect x="936" y="214" width="6" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="944" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="950" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="956" y="214" width="3" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="961" y="214" width="6" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="969" y="214" width="3" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="975" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="988" y="214" width="4" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="995" y="214" width="3" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1002" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1006" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1018" y="214" width="6" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1027" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1031" y="214" width="6" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1039" y="214" width="4" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1045" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1061" y="214" width="3" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1072" y="214" width="6" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1082" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1086" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1091" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1099" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1104" y="214" width="3" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1111" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1122" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1128" y="214" width="2" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1138" y="214" width="3" height="70" fill="#E6EDF3" opacity=".85"/>
+<rect x="1151" y="214" width="6" height="70" fill="#E6EDF3" opacity=".85"/>
+<text x="1050.0" y="306" font-size="12" fill="#8B949E" text-anchor="middle" letter-spacing="6">YUG912</text>
+</g></g>
+</svg>
