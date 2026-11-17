@@ -67,6 +67,10 @@ Search and explore recipes from a live API. · [Board this flight →](https://g
 </div>
 
 <div align="center">
+  <img src="assets/contributions.svg" alt="GitHub contribution calendar for the last 12 months, in amber" width="100%"/>
+</div>
+
+<div align="center">
   <img src="https://streak-stats.demolab.com?user=Yug912&background=0b0c0e&border=0b0c0e&ring=FFB000&fire=FFB000&currStreakNum=F2F0E8&sideNums=F2F0E8&currStreakLabel=FFB000&sideLabels=7c7f87&dates=7c7f87&stroke=1f2126&border_radius=16" alt="GitHub streak" width="100%"/>
 </div>
 
