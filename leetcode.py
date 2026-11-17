@@ -10,7 +10,7 @@ DAYS = 31
 TITLE = "LEETCODE LOG · LAST 31 DAYS"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "leetcode.svg")
 
-BG, AMBER, WHITE = "#0b0c0e", "#FFB000", "#F2F0E8"
+BG, ACCENT, WHITE, GREY = "#0d1117", "#58A6FF", "#E6EDF3", "#8B949E"
 FONT = "'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif"
 
 
@@ -53,18 +53,18 @@ def render(days, counts):
     ys = [B - c / ymax * (B - T) for c in counts]
 
     out = [f'<rect width="{W}" height="{H}" rx="16" fill="{BG}"/>',
-           f'<text x="{W/2}" y="52" font-size="22" fill="{AMBER}" text-anchor="middle">{TITLE}</text>']
+           f'<text x="{W/2}" y="52" font-size="22" fill="{WHITE}" text-anchor="middle">{TITLE}</text>']
 
     # grid + y labels
     for k in range(0, ymax + 1, step):
         y = B - k / ymax * (B - T)
-        out.append(f'<line x1="{L}" y1="{y:.1f}" x2="{R}" y2="{y:.1f}" stroke="{AMBER}" stroke-opacity=".18" stroke-dasharray="3 3"/>')
-        out.append(f'<text x="{L-12}" y="{y+5:.1f}" font-size="13" fill="{AMBER}" text-anchor="end">{k}</text>')
+        out.append(f'<line x1="{L}" y1="{y:.1f}" x2="{R}" y2="{y:.1f}" stroke="{GREY}" stroke-opacity=".18" stroke-dasharray="3 3"/>')
+        out.append(f'<text x="{L-12}" y="{y+5:.1f}" font-size="13" fill="{GREY}" text-anchor="end">{k}</text>')
     for x, d in zip(xs, days):
-        out.append(f'<line x1="{x:.1f}" y1="{T}" x2="{x:.1f}" y2="{B}" stroke="{AMBER}" stroke-opacity=".18" stroke-dasharray="3 3"/>')
-        out.append(f'<text x="{x:.1f}" y="{B+24}" font-size="13" fill="{AMBER}" text-anchor="middle">{d.day}</text>')
-    out.append(f'<text x="{(L+R)/2}" y="{B+62}" font-size="14" fill="{AMBER}" text-anchor="middle">Days</text>')
-    out.append(f'<text transform="translate(38 {(T+B)/2}) rotate(-90)" font-size="14" fill="{AMBER}" text-anchor="middle">Submissions</text>')
+        out.append(f'<line x1="{x:.1f}" y1="{T}" x2="{x:.1f}" y2="{B}" stroke="{GREY}" stroke-opacity=".18" stroke-dasharray="3 3"/>')
+        out.append(f'<text x="{x:.1f}" y="{B+24}" font-size="13" fill="{GREY}" text-anchor="middle">{d.day}</text>')
+    out.append(f'<text x="{(L+R)/2}" y="{B+62}" font-size="14" fill="{GREY}" text-anchor="middle">Days</text>')
+    out.append(f'<text transform="translate(38 {(T+B)/2}) rotate(-90)" font-size="14" fill="{GREY}" text-anchor="middle">Submissions</text>')
 
     # smooth curve (Catmull-Rom -> cubic Bezier), control points kept inside the plot
     def clamp(v): return min(max(v, T), B)
@@ -76,8 +76,8 @@ def render(days, counts):
         c1 = (x1 + (x2 - x0) / 6, clamp(y1 + (y2 - y0) / 6))
         c2 = (x2 - (x3 - x1) / 6, clamp(y2 - (y3 - y1) / 6))
         path += f" C{c1[0]:.1f},{c1[1]:.1f} {c2[0]:.1f},{c2[1]:.1f} {x2:.1f},{y2:.1f}"
-    out.append(f'<path d="{path} L{xs[-1]:.1f},{B} L{xs[0]:.1f},{B}Z" fill="{AMBER}" fill-opacity=".1"/>')
-    out.append(f'<path d="{path}" fill="none" stroke="{AMBER}" stroke-width="4" stroke-linejoin="round"/>')
+    out.append(f'<path d="{path} L{xs[-1]:.1f},{B} L{xs[0]:.1f},{B}Z" fill="{ACCENT}" fill-opacity=".1"/>')
+    out.append(f'<path d="{path}" fill="none" stroke="{ACCENT}" stroke-width="4" stroke-linejoin="round"/>')
     for x, y, d, c in zip(xs, ys, days, counts):
         out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="{WHITE}"><title>{d:%b %d}: {c}</title></circle>')
 

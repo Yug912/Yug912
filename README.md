@@ -5,9 +5,9 @@
 </div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/yug-thakral-a38252317/"><img src="https://img.shields.io/badge/LINKEDIN-0b0c0e?style=for-the-badge&logo=linkedin&logoColor=FFB000&labelColor=0b0c0e" alt="LinkedIn"/></a>
-  <a href="https://codolio.com/profile/Yug_Thakral"><img src="https://img.shields.io/badge/CODOLIO-0b0c0e?style=for-the-badge&logo=codeforces&logoColor=FFB000&labelColor=0b0c0e" alt="Codolio"/></a>
-  <a href="https://github.com/Yug912?tab=repositories"><img src="https://img.shields.io/badge/ALL%20ROUTES-0b0c0e?style=for-the-badge&logo=github&logoColor=FFB000&labelColor=0b0c0e" alt="Repositories"/></a>
+  <a href="https://www.linkedin.com/in/yug-thakral-a38252317/"><img src="https://img.shields.io/badge/LINKEDIN-161b22?style=for-the-badge&logo=linkedin&logoColor=58A6FF&labelColor=161b22" alt="LinkedIn"/></a>
+  <a href="https://codolio.com/profile/Yug_Thakral"><img src="https://img.shields.io/badge/CODOLIO-161b22?style=for-the-badge&logo=codeforces&logoColor=58A6FF&labelColor=161b22" alt="Codolio"/></a>
+  <a href="https://github.com/Yug912?tab=repositories"><img src="https://img.shields.io/badge/ALL%20ROUTES-161b22?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=161b22" alt="Repositories"/></a>
 </p>
 
 <p align="center"><code>// boarding pass</code><br/>
@@ -59,7 +59,7 @@ Search and explore recipes from a live API. · [Board this flight →](https://g
 <br/><br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Yug912&bg_color=0b0c0e&color=FFB000&line=FFB000&point=F2F0E8&area=true&area_color=FFB000&hide_border=true&radius=16&custom_title=FLIGHT%20LOG%20%C2%B7%20LAST%2031%20DAYS" alt="Contribution activity graph" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Yug912&bg_color=0d1117&color=8B949E&title_color=E6EDF3&line=58A6FF&point=E6EDF3&area=true&area_color=58A6FF&hide_border=true&radius=16&custom_title=FLIGHT%20LOG%20%C2%B7%20LAST%2031%20DAYS" alt="Contribution activity graph" width="100%"/>
 </div>
 
 <div align="center">
@@ -67,7 +67,7 @@ Search and explore recipes from a live API. · [Board this flight →](https://g
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Yug912&background=0b0c0e&border=0b0c0e&ring=FFB000&fire=FFB000&currStreakNum=F2F0E8&sideNums=F2F0E8&currStreakLabel=FFB000&sideLabels=7c7f87&dates=7c7f87&stroke=1f2126&border_radius=16" alt="GitHub streak" width="100%"/>
+  <img src="https://streak-stats.demolab.com?user=Yug912&background=0d1117&border=30363d&ring=58A6FF&fire=58A6FF&currStreakNum=E6EDF3&sideNums=E6EDF3&currStreakLabel=58A6FF&sideLabels=8B949E&dates=8B949E&stroke=30363d&border_radius=16" alt="GitHub streak" width="100%"/>
 </div>
 
 <br/>

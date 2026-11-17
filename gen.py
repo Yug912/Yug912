@@ -45,9 +45,10 @@ GATES = [("A1", "C++"), ("A2", "PYTHON"), ("A3", "JAVASCRIPT"), ("A4", "TYPESCRI
          ("B1", "DJANGO"), ("B2", "HTML / CSS"), ("B3", "GEMINI API"), ("B4", "CLOUDFLARE")]
 
 # ---------------------------------------------------------------- STYLE
-BG, PANEL, TILE = "#0b0c0e", "#131418", "#1c1d22"
-AMBER, AMBER_DIM, WHITE, GREY = "#FFB000", "#8a6a1f", "#F2F0E8", "#7c7f87"
-GREEN, YELLOW_SIGN = "#4ADE80", "#FFC20E"
+BG, PANEL, TILE = "#0d1117", "#161b22", "#21262d"
+ACCENT, WHITE, GREY, LINE = "#58A6FF", "#E6EDF3", "#8B949E", "#30363d"
+GREEN, ROW = "#3FB950", "#11161d"
+TICKER_FROM, TICKER_TO = "#58A6FF", "#A371F7"   # the one bright band: the moving ticker
 FONT = "'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Courier New',monospace"
 GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@%&"
 random.seed(912)
@@ -62,7 +63,7 @@ def svg(w, h, body, css=""):
             f"{css}</style>\n{body}\n</svg>\n")
 
 
-def flap_tiles(text, x0, y0, tw, th, gap, fs, period, start, step, color=AMBER, scr=4, scr_dt=0.07, uid="t"):
+def flap_tiles(text, x0, y0, tw, th, gap, fs, period, start, step, color=WHITE, scr=4, scr_dt=0.07, uid="t"):
     """Split-flap tiles that scramble then settle, looping every `period` seconds."""
     css, out = [], []
     for i, ch in enumerate(text):
@@ -105,13 +106,13 @@ def ticker(text, y, w, fs, color, uid, speed=55, x_pad=0, h=None):
 
 def board_header(w, title, right, y=0):
     return (f'<rect x="0" y="{y}" width="{w}" height="64" fill="{PANEL}"/>'
-            f'<circle cx="36" cy="{y+32}" r="7" fill="{AMBER}" class="blink"/>'
-            f'<text x="56" y="{y+41}" font-size="24" fill="{AMBER}" letter-spacing="6">{e(title)}</text>'
+            f'<circle cx="36" cy="{y+32}" r="6" fill="{GREEN}" class="blink"/>'
+            f'<text x="56" y="{y+41}" font-size="22" fill="{WHITE}" letter-spacing="6">{e(title)}</text>'
             f'<text x="{w-32}" y="{y+40}" font-size="15" fill="{GREY}" text-anchor="end" letter-spacing="3">{e(right)}</text>')
 
 
 def status_cell(x, y, label, kind):
-    col = {"live": GREEN, "work": AMBER, "done": GREY, "win": GREEN, "place": AMBER}[kind]
+    col = {"live": GREEN, "work": ACCENT, "done": GREY, "win": GREEN, "place": ACCENT}[kind]
     cls = ' class="blink"' if kind in ("live", "work") else ""
     return (f'<circle cx="{x}" cy="{y-6}" r="6" fill="{col}"{cls}/>'
             f'<text x="{x+16}" y="{y}" font-size="{17 if len(label) < 12 else 15}" fill="{col}" letter-spacing="2">{e(label)}</text>')
@@ -129,11 +130,11 @@ def header():
     body.append(t); css.append(c)
     tw2, gap2 = 26, 4
     x1 = (W - (len(TAGLINE) * (tw2 + gap2) - gap2)) / 2
-    t, c = flap_tiles(TAGLINE, x1, 246, tw2, 38, gap2, 22, 12, 1.8, 0.04, color=WHITE, scr=3, uid="g")
+    t, c = flap_tiles(TAGLINE, x1, 246, tw2, 38, gap2, 22, 12, 1.8, 0.04, color=ACCENT, scr=3, uid="g")
     body.append(t); css.append(c)
     # info strip
     y = 330
-    body.append(f'<line x1="40" y1="{y-18}" x2="{W-40}" y2="{y-18}" stroke="#25272d" stroke-width="1.5"/>')
+    body.append(f'<line x1="40" y1="{y-18}" x2="{W-40}" y2="{y-18}" stroke="{LINE}" stroke-width="1.5"/>')
     cols = [("ORIGIN", "B.TECH CSE · JIIT NOIDA"), ("CREW", "TECH LEAD · RAPID PROG. HUB"), ("STATUS", None)]
     for k, (lab, val) in enumerate(cols):
         cx = 60 + k * 400
@@ -144,7 +145,8 @@ def header():
             body.append(status_cell(cx + 6, y + 30, "BOARDING NOW", "live"))
     # ticker bar
     body.append(f'<clipPath id="tk"><rect x="0" y="{H-52}" width="{W}" height="52"/></clipPath>')
-    body.append(f'<path d="M0 {H-52} H{W} V{H-18} Q{W} {H} {W-18} {H} H18 Q0 {H} 0 {H-18}Z" fill="{AMBER}"/>')
+    body.append(f'<linearGradient id="tkg" x1="0" x2="1"><stop offset="0" stop-color="{TICKER_FROM}"/><stop offset="1" stop-color="{TICKER_TO}"/></linearGradient>')
+    body.append(f'<path d="M0 {H-52} H{W} V{H-18} Q{W} {H} {W-18} {H} H18 Q0 {H} 0 {H-18}Z" fill="url(#tkg)"/>')
     t, c = ticker(TICKER, H - 19, W, 19, BG, "tk1")
     body.append(f'<g clip-path="url(#tk)">{t}</g>'); css.append(c)
     open(f"{OUT}/header.svg", "w").write(svg(W, H, "\n".join(body), "\n".join(css)))
@@ -163,14 +165,14 @@ def departures():
     for i, (fl, dest, desc, via, gate, st, kind) in enumerate(DEPARTURES):
         y = 108 + i * rowh
         if i % 2 == 0:
-            b.append(f'<rect x="0" y="{y}" width="{W}" height="{rowh}" fill="#101114"/>')
-        b.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="#1f2126"/>')
-        b.append(f'<text x="40" y="{y+46}" font-size="18" fill="{WHITE}">{fl}</text>')
-        b.append(f'<text x="170" y="{y+38}" font-size="26" fill="{AMBER}" letter-spacing="2">{e(dest)}</text>')
+            b.append(f'<rect x="0" y="{y}" width="{W}" height="{rowh}" fill="{ROW}"/>')
+        b.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="{LINE}"/>')
+        b.append(f'<text x="40" y="{y+46}" font-size="18" fill="{GREY}">{fl}</text>')
+        b.append(f'<text x="170" y="{y+38}" font-size="26" fill="{WHITE}" letter-spacing="2">{e(dest)}</text>')
         b.append(f'<text x="170" y="{y+62}" font-size="14" fill="{GREY}" font-weight="400">{e(desc)}</text>')
         b.append(f'<text x="560" y="{y+46}" font-size="15" fill="{WHITE}" letter-spacing="1">{e(via)}</text>')
-        b.append(f'<rect x="846" y="{y+24}" width="64" height="30" rx="4" fill="{YELLOW_SIGN}"/>'
-                 f'<text x="878" y="{y+45}" font-size="15" fill="{BG}" text-anchor="middle">{gate}</text>')
+        b.append(f'<rect x="846" y="{y+24}" width="64" height="30" rx="6" fill="{TILE}" stroke="{LINE}"/>'
+                 f'<text x="878" y="{y+45}" font-size="15" fill="{ACCENT}" text-anchor="middle">{gate}</text>')
         b.append(status_cell(970, y + 46, st, kind))
     b.append("</g>")
     open(f"{OUT}/departures.svg", "w").write(svg(W, H, "\n".join(b)))
@@ -188,11 +190,11 @@ def arrivals():
     for i, (ev, org, proj, st, kind) in enumerate(ARRIVALS):
         y = 108 + i * rowh
         if i % 2 == 0:
-            b.append(f'<rect x="0" y="{y}" width="{W}" height="{rowh}" fill="#101114"/>')
-        b.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="#1f2126"/>')
-        b.append(f'<text x="40" y="{y+41}" font-size="22" fill="{AMBER}" letter-spacing="2">{e(ev)}</text>')
-        b.append(f'<text x="380" y="{y+40}" font-size="16" fill="{WHITE}" letter-spacing="1">{e(org)}</text>')
-        b.append(f'<text x="620" y="{y+40}" font-size="16" fill="{WHITE}" letter-spacing="1">{e(proj)}</text>')
+            b.append(f'<rect x="0" y="{y}" width="{W}" height="{rowh}" fill="{ROW}"/>')
+        b.append(f'<line x1="0" y1="{y}" x2="{W}" y2="{y}" stroke="{LINE}"/>')
+        b.append(f'<text x="40" y="{y+41}" font-size="22" fill="{WHITE}" letter-spacing="2">{e(ev)}</text>')
+        b.append(f'<text x="380" y="{y+40}" font-size="16" fill="{GREY}" letter-spacing="1">{e(org)}</text>')
+        b.append(f'<text x="620" y="{y+40}" font-size="16" fill="{GREY}" letter-spacing="1">{e(proj)}</text>')
         b.append(status_cell(970, y + 40, st, kind))
     b.append("</g>")
     open(f"{OUT}/arrivals.svg", "w").write(svg(W, H, "\n".join(b)))
@@ -216,10 +218,10 @@ def scoreboard():
         t, c = flap_tiles(txt, x0, 100, tw, 64, gap, 40, 12, 0.6 + k * 0.4, 0.1, uid=f"sc{k}")
         b.append(t); css.append(c)
         b.append(f'<text x="{cx+cw/2:.1f}" y="200" font-size="15" fill="{WHITE}" text-anchor="middle" letter-spacing="3">{e(lab)}</text>')
-        b.append(f'<text x="{cx+cw/2:.1f}" y="224" font-size="12" fill="{AMBER}" text-anchor="middle" letter-spacing="1">{e(sub)}</text>')
+        b.append(f'<text x="{cx+cw/2:.1f}" y="224" font-size="12" fill="{ACCENT}" text-anchor="middle" letter-spacing="1">{e(sub)}</text>')
         if k:
-            b.append(f'<line x1="{cx:.1f}" y1="96" x2="{cx:.1f}" y2="234" stroke="#25272d"/>')
-    b.append(f'<line x1="40" y1="258" x2="{W-40}" y2="258" stroke="#25272d"/>')
+            b.append(f'<line x1="{cx:.1f}" y1="96" x2="{cx:.1f}" y2="234" stroke="{LINE}"/>')
+    b.append(f'<line x1="40" y1="258" x2="{W-40}" y2="258" stroke="{LINE}"/>')
     b.append(f'<text x="{W/2}" y="288" font-size="13" fill="{GREY}" letter-spacing="2" text-anchor="middle" xml:space="preserve">{e(SCORE_FOOT)}</text>')
     b.append("</g>")
     open(f"{OUT}/scoreboard.svg", "w").write(svg(W, H, "\n".join(b), "\n".join(css)))
@@ -238,12 +240,11 @@ def gates():
     for i, (code, name) in enumerate(GATES):
         r, c = divmod(i, per)
         x, y = 40 + c * (gw + 16), 94 + r * 84
-        b.append(f'<rect x="{x:.1f}" y="{y}" width="{gw:.1f}" height="64" rx="6" fill="{YELLOW_SIGN}"/>')
-        b.append(f'<rect x="{x:.1f}" y="{y}" width="72" height="64" rx="6" fill="{BG}"/>'
-                 f'<rect x="{x+66:.1f}" y="{y}" width="6" height="64" fill="{BG}"/>')
-        b.append(f'<text x="{x+36:.1f}" y="{y+42}" font-size="24" fill="{YELLOW_SIGN}" text-anchor="middle">{code}</text>')
-        b.append(f'<text x="{x+92:.1f}" y="{y+41}" font-size="20" fill="{BG}">{e(name)}</text>')
-        b.append(f'<text x="{x+gw-20:.1f}" y="{y+42}" font-size="22" fill="{BG}" text-anchor="end">→</text>')
+        b.append(f'<rect x="{x:.1f}" y="{y}" width="{gw:.1f}" height="64" rx="8" fill="{TILE}" stroke="{LINE}"/>')
+        b.append(f'<line x1="{x+72:.1f}" y1="{y+14}" x2="{x+72:.1f}" y2="{y+50}" stroke="{LINE}"/>')
+        b.append(f'<text x="{x+36:.1f}" y="{y+42}" font-size="22" fill="{ACCENT}" text-anchor="middle">{code}</text>')
+        b.append(f'<text x="{x+92:.1f}" y="{y+41}" font-size="20" fill="{WHITE}">{e(name)}</text>')
+        b.append(f'<text x="{x+gw-20:.1f}" y="{y+42}" font-size="22" fill="{GREY}" text-anchor="end">→</text>')
     b.append("</g>")
     open(f"{OUT}/gates.svg", "w").write(svg(W, H, "\n".join(b)))
 
@@ -252,7 +253,7 @@ def gates():
 def footer():
     W, H = 1200, 64
     msg = "THANK YOU FOR TRAVELLING WITH YUG   ·   MIND THE GAP BETWEEN IDEA AND DEPLOY   ·   NEXT DEPARTURE: YOUR REPO?   ·   "
-    t, c = ticker(msg, 40, W, 17, AMBER, "ft", speed=45)
+    t, c = ticker(msg, 40, W, 15, GREY, "ft", speed=45)
     body = (f'<rect width="{W}" height="{H}" rx="14" fill="{BG}"/>'
             f'<clipPath id="fc"><rect x="0" y="0" width="{W}" height="{H}" rx="14"/></clipPath>'
             f'<g clip-path="url(#fc)">{t}</g>')
