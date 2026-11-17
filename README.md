@@ -70,6 +70,10 @@ A Spotify-style player built from scratch in plain JavaScript. · [Board this fl
 </div>
 
 <div align="center">
+  <a href="https://leetcode.com/u/YUG_THAKRAL_18/"><img src="assets/leetcode.svg" alt="LeetCode submissions over the last 31 days" width="100%"/></a>
+</div>
+
+<div align="center">
   <img src="https://streak-stats.demolab.com?user=Yug912&background=0b0c0e&border=0b0c0e&ring=FFB000&fire=FFB000&currStreakNum=F2F0E8&sideNums=F2F0E8&currStreakLabel=FFB000&sideLabels=7c7f87&dates=7c7f87&stroke=1f2126&border_radius=16" alt="GitHub streak" width="100%"/>
 </div>
 
