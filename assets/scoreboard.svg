@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="310" viewBox="0 0 1200 310" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Courier New',monospace" font-weight="700">
+<style>
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.15}}
+.blink{animation:blink 1.2s steps(1) infinite}
+@keyframes sc0f0{0%,4.99%{opacity:1}5.00%,7.33%{opacity:0}7.34%,100%{opacity:1}}.sc0f0{animation:sc0f0 12s linear infinite}
+@keyframes sc0s0_0{0%,4.99%{opacity:0}5.00%,5.58%{opacity:1}5.59%,100%{opacity:0}}.sc0s0_0{opacity:0;animation:sc0s0_0 12s linear infinite}
+@keyframes sc0s0_1{0%,5.57%{opacity:0}5.58%,6.17%{opacity:1}6.18%,100%{opacity:0}}.sc0s0_1{opacity:0;animation:sc0s0_1 12s linear infinite}
+@keyframes sc0s0_2{0%,6.16%{opacity:0}6.17%,6.75%{opacity:1}6.76%,100%{opacity:0}}.sc0s0_2{opacity:0;animation:sc0s0_2 12s linear infinite}
+@keyframes sc0s0_3{0%,6.74%{opacity:0}6.75%,7.33%{opacity:1}7.34%,100%{opacity:0}}.sc0s0_3{opacity:0;animation:sc0s0_3 12s linear infinite}
+@keyframes sc0f1{0%,5.82%{opacity:1}5.83%,8.17%{opacity:0}8.18%,100%{opacity:1}}.sc0f1{animation:sc0f1 12s linear infinite}
+@keyframes sc0s1_0{0%,5.82%{opacity:0}5.83%,6.42%{opacity:1}6.43%,100%{opacity:0}}.sc0s1_0{opacity:0;animation:sc0s1_0 12s linear infinite}
+@keyframes sc0s1_1{0%,6.41%{opacity:0}6.42%,7.00%{opacity:1}7.01%,100%{opacity:0}}.sc0s1_1{opacity:0;animation:sc0s1_1 12s linear infinite}
+@keyframes sc0s1_2{0%,6.99%{opacity:0}7.00%,7.58%{opacity:1}7.59%,100%{opacity:0}}.sc0s1_2{opacity:0;animation:sc0s1_2 12s linear infinite}
+@keyframes sc0s1_3{0%,7.57%{opacity:0}7.58%,8.17%{opacity:1}8.18%,100%{opacity:0}}.sc0s1_3{opacity:0;animation:sc0s1_3 12s linear infinite}
+@keyframes sc0f2{0%,6.66%{opacity:1}6.67%,9.00%{opacity:0}9.01%,100%{opacity:1}}.sc0f2{animation:sc0f2 12s linear infinite}
+@keyframes sc0s2_0{0%,6.66%{opacity:0}6.67%,7.25%{opacity:1}7.26%,100%{opacity:0}}.sc0s2_0{opacity:0;animation:sc0s2_0 12s linear infinite}
+@keyframes sc0s2_1{0%,7.24%{opacity:0}7.25%,7.83%{opacity:1}7.84%,100%{opacity:0}}.sc0s2_1{opacity:0;animation:sc0s2_1 12s linear infinite}
+@keyframes sc0s2_2{0%,7.82%{opacity:0}7.83%,8.42%{opacity:1}8.43%,100%{opacity:0}}.sc0s2_2{opacity:0;animation:sc0s2_2 12s linear infinite}
+@keyframes sc0s2_3{0%,8.41%{opacity:0}8.42%,9.00%{opacity:1}9.01%,100%{opacity:0}}.sc0s2_3{opacity:0;animation:sc0s2_3 12s linear infinite}
+@keyframes sc0f3{0%,7.49%{opacity:1}7.50%,9.83%{opacity:0}9.84%,100%{opacity:1}}.sc0f3{animation:sc0f3 12s linear infinite}
+@keyframes sc0s3_0{0%,7.49%{opacity:0}7.50%,8.08%{opacity:1}8.09%,100%{opacity:0}}.sc0s3_0{opacity:0;animation:sc0s3_0 12s linear infinite}
+@keyframes sc0s3_1{0%,8.07%{opacity:0}8.08%,8.67%{opacity:1}8.68%,100%{opacity:0}}.sc0s3_1{opacity:0;animation:sc0s3_1 12s linear infinite}
+@keyframes sc0s3_2{0%,8.66%{opacity:0}8.67%,9.25%{opacity:1}9.26%,100%{opacity:0}}.sc0s3_2{opacity:0;animation:sc0s3_2 12s linear infinite}
+@keyframes sc0s3_3{0%,9.24%{opacity:0}9.25%,9.83%{opacity:1}9.84%,100%{opacity:0}}.sc0s3_3{opacity:0;animation:sc0s3_3 12s linear infinite}
+@keyframes sc1f0{0%,8.32%{opacity:1}8.33%,10.67%{opacity:0}10.68%,100%{opacity:1}}.sc1f0{animation:sc1f0 12s linear infinite}
+@keyframes sc1s0_0{0%,8.32%{opacity:0}8.33%,8.92%{opacity:1}8.93%,100%{opacity:0}}.sc1s0_0{opacity:0;animation:sc1s0_0 12s linear infinite}
+@keyframes sc1s0_1{0%,8.91%{opacity:0}8.92%,9.50%{opacity:1}9.51%,100%{opacity:0}}.sc1s0_1{opacity:0;animation:sc1s0_1 12s linear infinite}
+@keyframes sc1s0_2{0%,9.49%{opacity:0}9.50%,10.08%{opacity:1}10.09%,100%{opacity:0}}.sc1s0_2{opacity:0;animation:sc1s0_2 12s linear infinite}
+@keyframes sc1s0_3{0%,10.07%{opacity:0}10.08%,10.67%{opacity:1}10.68%,100%{opacity:0}}.sc1s0_3{opacity:0;animation:sc1s0_3 12s linear infinite}
+@keyframes sc1f1{0%,9.16%{opacity:1}9.17%,11.50%{opacity:0}11.51%,100%{opacity:1}}.sc1f1{animation:sc1f1 12s linear infinite}
+@keyframes sc1s1_0{0%,9.16%{opacity:0}9.17%,9.75%{opacity:1}9.76%,100%{opacity:0}}.sc1s1_0{opacity:0;animation:sc1s1_0 12s linear infinite}
+@keyframes sc1s1_1{0%,9.74%{opacity:0}9.75%,10.33%{opacity:1}10.34%,100%{opacity:0}}.sc1s1_1{opacity:0;animation:sc1s1_1 12s linear infinite}
+@keyframes sc1s1_2{0%,10.32%{opacity:0}10.33%,10.92%{opacity:1}10.93%,100%{opacity:0}}.sc1s1_2{opacity:0;animation:sc1s1_2 12s linear infinite}
+@keyframes sc1s1_3{0%,10.91%{opacity:0}10.92%,11.50%{opacity:1}11.51%,100%{opacity:0}}.sc1s1_3{opacity:0;animation:sc1s1_3 12s linear infinite}
+@keyframes sc1f2{0%,9.99%{opacity:1}10.00%,12.33%{opacity:0}12.34%,100%{opacity:1}}.sc1f2{animation:sc1f2 12s linear infinite}
+@keyframes sc1s2_0{0%,9.99%{opacity:0}10.00%,10.58%{opacity:1}10.59%,100%{opacity:0}}.sc1s2_0{opacity:0;animation:sc1s2_0 12s linear infinite}
+@keyframes sc1s2_1{0%,10.57%{opacity:0}10.58%,11.17%{opacity:1}11.18%,100%{opacity:0}}.sc1s2_1{opacity:0;animation:sc1s2_1 12s linear infinite}
+@keyframes sc1s2_2{0%,11.16%{opacity:0}11.17%,11.75%{opacity:1}11.76%,100%{opacity:0}}.sc1s2_2{opacity:0;animation:sc1s2_2 12s linear infinite}
+@keyframes sc1s2_3{0%,11.74%{opacity:0}11.75%,12.33%{opacity:1}12.34%,100%{opacity:0}}.sc1s2_3{opacity:0;animation:sc1s2_3 12s linear infinite}
+@keyframes sc1f3{0%,10.82%{opacity:1}10.83%,13.17%{opacity:0}13.18%,100%{opacity:1}}.sc1f3{animation:sc1f3 12s linear infinite}
+@keyframes sc1s3_0{0%,10.82%{opacity:0}10.83%,11.42%{opacity:1}11.43%,100%{opacity:0}}.sc1s3_0{opacity:0;animation:sc1s3_0 12s linear infinite}
+@keyframes sc1s3_1{0%,11.41%{opacity:0}11.42%,12.00%{opacity:1}12.01%,100%{opacity:0}}.sc1s3_1{opacity:0;animation:sc1s3_1 12s linear infinite}
+@keyframes sc1s3_2{0%,11.99%{opacity:0}12.00%,12.58%{opacity:1}12.59%,100%{opacity:0}}.sc1s3_2{opacity:0;animation:sc1s3_2 12s linear infinite}
+@keyframes sc1s3_3{0%,12.57%{opacity:0}12.58%,13.17%{opacity:1}13.18%,100%{opacity:0}}.sc1s3_3{opacity:0;animation:sc1s3_3 12s linear infinite}
+@keyframes sc2f0{0%,11.66%{opacity:1}11.67%,14.00%{opacity:0}14.01%,100%{opacity:1}}.sc2f0{animation:sc2f0 12s linear infinite}
+@keyframes sc2s0_0{0%,11.66%{opacity:0}11.67%,12.25%{opacity:1}12.26%,100%{opacity:0}}.sc2s0_0{opacity:0;animation:sc2s0_0 12s linear infinite}
+@keyframes sc2s0_1{0%,12.24%{opacity:0}12.25%,12.83%{opacity:1}12.84%,100%{opacity:0}}.sc2s0_1{opacity:0;animation:sc2s0_1 12s linear infinite}
+@keyframes sc2s0_2{0%,12.82%{opacity:0}12.83%,13.42%{opacity:1}13.43%,100%{opacity:0}}.sc2s0_2{opacity:0;animation:sc2s0_2 12s linear infinite}
+@keyframes sc2s0_3{0%,13.41%{opacity:0}13.42%,14.00%{opacity:1}14.01%,100%{opacity:0}}.sc2s0_3{opacity:0;animation:sc2s0_3 12s linear infinite}
+@keyframes sc2f1{0%,12.49%{opacity:1}12.50%,14.83%{opacity:0}14.84%,100%{opacity:1}}.sc2f1{animation:sc2f1 12s linear infinite}
+@keyframes sc2s1_0{0%,12.49%{opacity:0}12.50%,13.08%{opacity:1}13.09%,100%{opacity:0}}.sc2s1_0{opacity:0;animation:sc2s1_0 12s linear infinite}
+@keyframes sc2s1_1{0%,13.07%{opacity:0}13.08%,13.67%{opacity:1}13.68%,100%{opacity:0}}.sc2s1_1{opacity:0;animation:sc2s1_1 12s linear infinite}
+@keyframes sc2s1_2{0%,13.66%{opacity:0}13.67%,14.25%{opacity:1}14.26%,100%{opacity:0}}.sc2s1_2{opacity:0;animation:sc2s1_2 12s linear infinite}
+@keyframes sc2s1_3{0%,14.24%{opacity:0}14.25%,14.83%{opacity:1}14.84%,100%{opacity:0}}.sc2s1_3{opacity:0;animation:sc2s1_3 12s linear infinite}
+@keyframes sc2f2{0%,13.32%{opacity:1}13.33%,15.67%{opacity:0}15.68%,100%{opacity:1}}.sc2f2{animation:sc2f2 12s linear infinite}
+@keyframes sc2s2_0{0%,13.32%{opacity:0}13.33%,13.92%{opacity:1}13.93%,100%{opacity:0}}.sc2s2_0{opacity:0;animation:sc2s2_0 12s linear infinite}
+@keyframes sc2s2_1{0%,13.91%{opacity:0}13.92%,14.50%{opacity:1}14.51%,100%{opacity:0}}.sc2s2_1{opacity:0;animation:sc2s2_1 12s linear infinite}
+@keyframes sc2s2_2{0%,14.49%{opacity:0}14.50%,15.08%{opacity:1}15.09%,100%{opacity:0}}.sc2s2_2{opacity:0;animation:sc2s2_2 12s linear infinite}
+@keyframes sc2s2_3{0%,15.07%{opacity:0}15.08%,15.67%{opacity:1}15.68%,100%{opacity:0}}.sc2s2_3{opacity:0;animation:sc2s2_3 12s linear infinite}
+@keyframes sc2f3{0%,14.16%{opacity:1}14.17%,16.50%{opacity:0}16.51%,100%{opacity:1}}.sc2f3{animation:sc2f3 12s linear infinite}
+@keyframes sc2s3_0{0%,14.16%{opacity:0}14.17%,14.75%{opacity:1}14.76%,100%{opacity:0}}.sc2s3_0{opacity:0;animation:sc2s3_0 12s linear infinite}
+@keyframes sc2s3_1{0%,14.74%{opacity:0}14.75%,15.33%{opacity:1}15.34%,100%{opacity:0}}.sc2s3_1{opacity:0;animation:sc2s3_1 12s linear infinite}
+@keyframes sc2s3_2{0%,15.32%{opacity:0}15.33%,15.92%{opacity:1}15.93%,100%{opacity:0}}.sc2s3_2{opacity:0;animation:sc2s3_2 12s linear infinite}
+@keyframes sc2s3_3{0%,15.91%{opacity:0}15.92%,16.50%{opacity:1}16.51%,100%{opacity:0}}.sc2s3_3{opacity:0;animation:sc2s3_3 12s linear infinite}
+@keyframes sc3f0{0%,14.99%{opacity:1}15.00%,17.33%{opacity:0}17.34%,100%{opacity:1}}.sc3f0{animation:sc3f0 12s linear infinite}
+@keyframes sc3s0_0{0%,14.99%{opacity:0}15.00%,15.58%{opacity:1}15.59%,100%{opacity:0}}.sc3s0_0{opacity:0;animation:sc3s0_0 12s linear infinite}
+@keyframes sc3s0_1{0%,15.57%{opacity:0}15.58%,16.17%{opacity:1}16.18%,100%{opacity:0}}.sc3s0_1{opacity:0;animation:sc3s0_1 12s linear infinite}
+@keyframes sc3s0_2{0%,16.16%{opacity:0}16.17%,16.75%{opacity:1}16.76%,100%{opacity:0}}.sc3s0_2{opacity:0;animation:sc3s0_2 12s linear infinite}
+@keyframes sc3s0_3{0%,16.74%{opacity:0}16.75%,17.33%{opacity:1}17.34%,100%{opacity:0}}.sc3s0_3{opacity:0;animation:sc3s0_3 12s linear infinite}
+@keyframes sc3f1{0%,15.82%{opacity:1}15.83%,18.17%{opacity:0}18.18%,100%{opacity:1}}.sc3f1{animation:sc3f1 12s linear infinite}
+@keyframes sc3s1_0{0%,15.82%{opacity:0}15.83%,16.42%{opacity:1}16.43%,100%{opacity:0}}.sc3s1_0{opacity:0;animation:sc3s1_0 12s linear infinite}
+@keyframes sc3s1_1{0%,16.41%{opacity:0}16.42%,17.00%{opacity:1}17.01%,100%{opacity:0}}.sc3s1_1{opacity:0;animation:sc3s1_1 12s linear infinite}
+@keyframes sc3s1_2{0%,16.99%{opacity:0}17.00%,17.58%{opacity:1}17.59%,100%{opacity:0}}.sc3s1_2{opacity:0;animation:sc3s1_2 12s linear infinite}
+@keyframes sc3s1_3{0%,17.57%{opacity:0}17.58%,18.17%{opacity:1}18.18%,100%{opacity:0}}.sc3s1_3{opacity:0;animation:sc3s1_3 12s linear infinite}
+@keyframes sc3f2{0%,16.66%{opacity:1}16.67%,19.00%{opacity:0}19.01%,100%{opacity:1}}.sc3f2{animation:sc3f2 12s linear infinite}
+@keyframes sc3s2_0{0%,16.66%{opacity:0}16.67%,17.25%{opacity:1}17.26%,100%{opacity:0}}.sc3s2_0{opacity:0;animation:sc3s2_0 12s linear infinite}
+@keyframes sc3s2_1{0%,17.24%{opacity:0}17.25%,17.83%{opacity:1}17.84%,100%{opacity:0}}.sc3s2_1{opacity:0;animation:sc3s2_1 12s linear infinite}
+@keyframes sc3s2_2{0%,17.82%{opacity:0}17.83%,18.42%{opacity:1}18.43%,100%{opacity:0}}.sc3s2_2{opacity:0;animation:sc3s2_2 12s linear infinite}
+@keyframes sc3s2_3{0%,18.41%{opacity:0}18.42%,19.00%{opacity:1}19.01%,100%{opacity:0}}.sc3s2_3{opacity:0;animation:sc3s2_3 12s linear infinite}
+@keyframes sc3f3{0%,17.49%{opacity:1}17.50%,19.83%{opacity:0}19.84%,100%{opacity:1}}.sc3f3{animation:sc3f3 12s linear infinite}
+@keyframes sc3s3_0{0%,17.49%{opacity:0}17.50%,18.08%{opacity:1}18.09%,100%{opacity:0}}.sc3s3_0{opacity:0;animation:sc3s3_0 12s linear infinite}
+@keyframes sc3s3_1{0%,18.07%{opacity:0}18.08%,18.67%{opacity:1}18.68%,100%{opacity:0}}.sc3s3_1{opacity:0;animation:sc3s3_1 12s linear infinite}
+@keyframes sc3s3_2{0%,18.66%{opacity:0}18.67%,19.25%{opacity:1}19.26%,100%{opacity:0}}.sc3s3_2{opacity:0;animation:sc3s3_2 12s linear infinite}
+@keyframes sc3s3_3{0%,19.24%{opacity:0}19.25%,19.83%{opacity:1}19.84%,100%{opacity:0}}.sc3s3_3{opacity:0;animation:sc3s3_3 12s linear infinite}
+@keyframes sc4f0{0%,18.32%{opacity:1}18.33%,20.67%{opacity:0}20.68%,100%{opacity:1}}.sc4f0{animation:sc4f0 12s linear infinite}
+@keyframes sc4s0_0{0%,18.32%{opacity:0}18.33%,18.92%{opacity:1}18.93%,100%{opacity:0}}.sc4s0_0{opacity:0;animation:sc4s0_0 12s linear infinite}
+@keyframes sc4s0_1{0%,18.91%{opacity:0}18.92%,19.50%{opacity:1}19.51%,100%{opacity:0}}.sc4s0_1{opacity:0;animation:sc4s0_1 12s linear infinite}
+@keyframes sc4s0_2{0%,19.49%{opacity:0}19.50%,20.08%{opacity:1}20.09%,100%{opacity:0}}.sc4s0_2{opacity:0;animation:sc4s0_2 12s linear infinite}
+@keyframes sc4s0_3{0%,20.07%{opacity:0}20.08%,20.67%{opacity:1}20.68%,100%{opacity:0}}.sc4s0_3{opacity:0;animation:sc4s0_3 12s linear infinite}
+@keyframes sc4f1{0%,19.16%{opacity:1}19.17%,21.50%{opacity:0}21.51%,100%{opacity:1}}.sc4f1{animation:sc4f1 12s linear infinite}
+@keyframes sc4s1_0{0%,19.16%{opacity:0}19.17%,19.75%{opacity:1}19.76%,100%{opacity:0}}.sc4s1_0{opacity:0;animation:sc4s1_0 12s linear infinite}
+@keyframes sc4s1_1{0%,19.74%{opacity:0}19.75%,20.33%{opacity:1}20.34%,100%{opacity:0}}.sc4s1_1{opacity:0;animation:sc4s1_1 12s linear infinite}
+@keyframes sc4s1_2{0%,20.32%{opacity:0}20.33%,20.92%{opacity:1}20.93%,100%{opacity:0}}.sc4s1_2{opacity:0;animation:sc4s1_2 12s linear infinite}
+@keyframes sc4s1_3{0%,20.91%{opacity:0}20.92%,21.50%{opacity:1}21.51%,100%{opacity:0}}.sc4s1_3{opacity:0;animation:sc4s1_3 12s linear infinite}
+@keyframes sc4f2{0%,19.99%{opacity:1}20.00%,22.33%{opacity:0}22.34%,100%{opacity:1}}.sc4f2{animation:sc4f2 12s linear infinite}
+@keyframes sc4s2_0{0%,19.99%{opacity:0}20.00%,20.58%{opacity:1}20.59%,100%{opacity:0}}.sc4s2_0{opacity:0;animation:sc4s2_0 12s linear infinite}
+@keyframes sc4s2_1{0%,20.57%{opacity:0}20.58%,21.17%{opacity:1}21.18%,100%{opacity:0}}.sc4s2_1{opacity:0;animation:sc4s2_1 12s linear infinite}
+@keyframes sc4s2_2{0%,21.16%{opacity:0}21.17%,21.75%{opacity:1}21.76%,100%{opacity:0}}.sc4s2_2{opacity:0;animation:sc4s2_2 12s linear infinite}
+@keyframes sc4s2_3{0%,21.74%{opacity:0}21.75%,22.33%{opacity:1}22.34%,100%{opacity:0}}.sc4s2_3{opacity:0;animation:sc4s2_3 12s linear infinite}</style>
+<rect width="1200" height="310" rx="18" fill="#0b0c0e"/>
+<clipPath id="c"><rect width="1200" height="310" rx="18"/></clipPath><g clip-path="url(#c)">
+<rect x="0" y="0" width="1200" height="64" fill="#131418"/><circle cx="36" cy="32" r="7" fill="#FFB000" class="blink"/><text x="56" y="41" font-size="24" fill="#FFB000" letter-spacing="6">SCOREBOARD</text><text x="1168" y="40" font-size="15" fill="#7c7f87" text-anchor="end" letter-spacing="3">VIA CODOLIO · NOV 2026</text>
+<rect x="55.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="55.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc0f0" x="77.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc0s0_0" x="77.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">&amp;</text>
+<text class="sc0s0_1" x="77.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">A</text>
+<text class="sc0s0_2" x="77.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">T</text>
+<text class="sc0s0_3" x="77.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">S</text>
+<line x1="55.0" y1="132.0" x2="99.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="105.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="105.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc0f1" x="127.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">9</text>
+<text class="sc0s1_0" x="127.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">L</text>
+<text class="sc0s1_1" x="127.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">6</text>
+<text class="sc0s1_2" x="127.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">7</text>
+<text class="sc0s1_3" x="127.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">Q</text>
+<line x1="105.0" y1="132.0" x2="149.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="155.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="155.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc0f2" x="177.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">9</text>
+<text class="sc0s2_0" x="177.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc0s2_1" x="177.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">I</text>
+<text class="sc0s2_2" x="177.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">R</text>
+<text class="sc0s2_3" x="177.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">O</text>
+<line x1="155.0" y1="132.0" x2="199.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="205.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="205.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc0f3" x="227.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">0</text>
+<text class="sc0s3_0" x="227.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">H</text>
+<text class="sc0s3_1" x="227.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">S</text>
+<text class="sc0s3_2" x="227.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">7</text>
+<text class="sc0s3_3" x="227.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">&amp;</text>
+<line x1="205.0" y1="132.0" x2="249.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<text x="152.0" y="200" font-size="15" fill="#F2F0E8" text-anchor="middle" letter-spacing="3">PROBLEMS SOLVED</text>
+<text x="152.0" y="224" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1">620 ACTIVE DAYS</text>
+<rect x="279.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="279.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc1f0" x="301.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc1s0_0" x="301.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">@</text>
+<text class="sc1s0_1" x="301.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc1s0_2" x="301.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">0</text>
+<text class="sc1s0_3" x="301.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">6</text>
+<line x1="279.0" y1="132.0" x2="323.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="329.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="329.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc1f1" x="351.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">9</text>
+<text class="sc1s1_0" x="351.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">P</text>
+<text class="sc1s1_1" x="351.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">4</text>
+<text class="sc1s1_2" x="351.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">2</text>
+<text class="sc1s1_3" x="351.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">T</text>
+<line x1="329.0" y1="132.0" x2="373.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="379.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="379.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc1f2" x="401.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">3</text>
+<text class="sc1s2_0" x="401.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc1s2_1" x="401.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">G</text>
+<text class="sc1s2_2" x="401.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc1s2_3" x="401.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">9</text>
+<line x1="379.0" y1="132.0" x2="423.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="429.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="429.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc1f3" x="451.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc1s3_0" x="451.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">D</text>
+<text class="sc1s3_1" x="451.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">7</text>
+<text class="sc1s3_2" x="451.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">Q</text>
+<text class="sc1s3_3" x="451.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">E</text>
+<line x1="429.0" y1="132.0" x2="473.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<text x="376.0" y="200" font-size="15" fill="#F2F0E8" text-anchor="middle" letter-spacing="3">LEETCODE</text>
+<text x="376.0" y="224" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1">KNIGHT · MAX 1944</text>
+<line x1="264.0" y1="96" x2="264.0" y2="234" stroke="#25272d"/>
+<rect x="503.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="503.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc2f0" x="525.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc2s0_0" x="525.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">W</text>
+<text class="sc2s0_1" x="525.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">5</text>
+<text class="sc2s0_2" x="525.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">V</text>
+<text class="sc2s0_3" x="525.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">5</text>
+<line x1="503.0" y1="132.0" x2="547.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="553.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="553.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc2f1" x="575.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">3</text>
+<text class="sc2s1_0" x="575.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">J</text>
+<text class="sc2s1_1" x="575.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">D</text>
+<text class="sc2s1_2" x="575.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">X</text>
+<text class="sc2s1_3" x="575.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">S</text>
+<line x1="553.0" y1="132.0" x2="597.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="603.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="603.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc2f2" x="625.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">5</text>
+<text class="sc2s2_0" x="625.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">J</text>
+<text class="sc2s2_1" x="625.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">K</text>
+<text class="sc2s2_2" x="625.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">6</text>
+<text class="sc2s2_3" x="625.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">V</text>
+<line x1="603.0" y1="132.0" x2="647.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="653.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="653.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc2f3" x="675.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">5</text>
+<text class="sc2s3_0" x="675.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">J</text>
+<text class="sc2s3_1" x="675.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">G</text>
+<text class="sc2s3_2" x="675.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">#</text>
+<text class="sc2s3_3" x="675.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">0</text>
+<line x1="653.0" y1="132.0" x2="697.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<text x="600.0" y="200" font-size="15" fill="#F2F0E8" text-anchor="middle" letter-spacing="3">CODEFORCES</text>
+<text x="600.0" y="224" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1">PUPIL · MAX 1424</text>
+<line x1="488.0" y1="96" x2="488.0" y2="234" stroke="#25272d"/>
+<rect x="727.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="727.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc3f0" x="749.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc3s0_0" x="749.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">B</text>
+<text class="sc3s0_1" x="749.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">I</text>
+<text class="sc3s0_2" x="749.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">Z</text>
+<text class="sc3s0_3" x="749.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<line x1="727.0" y1="132.0" x2="771.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="777.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="777.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc3f1" x="799.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">6</text>
+<text class="sc3s1_0" x="799.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">6</text>
+<text class="sc3s1_1" x="799.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">7</text>
+<text class="sc3s1_2" x="799.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">W</text>
+<text class="sc3s1_3" x="799.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">4</text>
+<line x1="777.0" y1="132.0" x2="821.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="827.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="827.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc3f2" x="849.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">4</text>
+<text class="sc3s2_0" x="849.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">%</text>
+<text class="sc3s2_1" x="849.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">H</text>
+<text class="sc3s2_2" x="849.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">U</text>
+<text class="sc3s2_3" x="849.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">L</text>
+<line x1="827.0" y1="132.0" x2="871.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="877.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="877.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc3f3" x="899.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">8</text>
+<text class="sc3s3_0" x="899.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">E</text>
+<text class="sc3s3_1" x="899.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">R</text>
+<text class="sc3s3_2" x="899.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">V</text>
+<text class="sc3s3_3" x="899.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">B</text>
+<line x1="877.0" y1="132.0" x2="921.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<text x="824.0" y="200" font-size="15" fill="#F2F0E8" text-anchor="middle" letter-spacing="3">CODECHEF</text>
+<text x="824.0" y="224" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1">3★ · MAX 1662</text>
+<line x1="712.0" y1="96" x2="712.0" y2="234" stroke="#25272d"/>
+<rect x="976.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="976.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc4f0" x="998.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc4s0_0" x="998.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">J</text>
+<text class="sc4s0_1" x="998.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">@</text>
+<text class="sc4s0_2" x="998.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">2</text>
+<text class="sc4s0_3" x="998.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">G</text>
+<line x1="976.0" y1="132.0" x2="1020.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="1026.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="1026.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc4f1" x="1048.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">2</text>
+<text class="sc4s1_0" x="1048.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">2</text>
+<text class="sc4s1_1" x="1048.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">J</text>
+<text class="sc4s1_2" x="1048.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">F</text>
+<text class="sc4s1_3" x="1048.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">J</text>
+<line x1="1026.0" y1="132.0" x2="1070.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<rect x="1076.0" y="100" width="44" height="64" rx="4" fill="#1c1d22"/>
+<rect x="1076.0" y="100" width="44" height="32.0" rx="4" fill="#ffffff" opacity=".035"/>
+<text class="sc4f2" x="1098.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<text class="sc4s2_0" x="1098.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">B</text>
+<text class="sc4s2_1" x="1098.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">B</text>
+<text class="sc4s2_2" x="1098.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">%</text>
+<text class="sc4s2_3" x="1098.0" y="146.4" font-size="40" fill="#FFB000" text-anchor="middle">1</text>
+<line x1="1076.0" y1="132.0" x2="1120.0" y2="132.0" stroke="#0b0c0e" stroke-width="2" opacity="1"/>
+<text x="1048.0" y="200" font-size="15" fill="#F2F0E8" text-anchor="middle" letter-spacing="3">CONTESTS</text>
+<text x="1048.0" y="224" font-size="12" fill="#FFB000" text-anchor="middle" letter-spacing="1">LC 41 · CF 62 · CC 18</text>
+<line x1="936.0" y1="96" x2="936.0" y2="234" stroke="#25272d"/>
+<line x1="40" y1="258" x2="1160" y2="258" stroke="#25272d"/>
+<text x="600.0" y="288" font-size="13" fill="#7c7f87" letter-spacing="2" text-anchor="middle" xml:space="preserve">1186 LEETCODE · 591 CODEFORCES · 139 CODECHEF · 74 GFG   │   EASY 371 · MEDIUM 772 · HARD 116</text>
+</g>
+</svg>

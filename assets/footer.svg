@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="64" viewBox="0 0 1200 64" font-family="'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Courier New',monospace" font-weight="700">
+<style>
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.15}}
+.blink{animation:blink 1.2s steps(1) infinite}
+@keyframes ft{from{transform:translateX(0)}to{transform:translateX(-1183.2px)}}.ft{animation:ft 26.3s linear infinite}</style>
+<rect width="1200" height="64" rx="14" fill="#0b0c0e"/><clipPath id="fc"><rect x="0" y="0" width="1200" height="64" rx="14"/></clipPath><g clip-path="url(#fc)"><g class="ft"><text x="0.0" y="40" font-size="17" fill="#FFB000" textLength="1183.2" lengthAdjust="spacingAndGlyphs" xml:space="preserve">THANK YOU FOR TRAVELLING WITH YUG   ·   MIND THE GAP BETWEEN IDEA AND DEPLOY   ·   NEXT DEPARTURE: YOUR REPO?   ·   </text><text x="1183.2" y="40" font-size="17" fill="#FFB000" textLength="1183.2" lengthAdjust="spacingAndGlyphs" xml:space="preserve">THANK YOU FOR TRAVELLING WITH YUG   ·   MIND THE GAP BETWEEN IDEA AND DEPLOY   ·   NEXT DEPARTURE: YOUR REPO?   ·   </text><text x="2366.4" y="40" font-size="17" fill="#FFB000" textLength="1183.2" lengthAdjust="spacingAndGlyphs" xml:space="preserve">THANK YOU FOR TRAVELLING WITH YUG   ·   MIND THE GAP BETWEEN IDEA AND DEPLOY   ·   NEXT DEPARTURE: YOUR REPO?   ·   </text></g></g>
+</svg>
