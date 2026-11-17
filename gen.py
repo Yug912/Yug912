@@ -92,7 +92,6 @@ def flap_tiles(text, x0, y0, tw, th, gap, fs, period, start, step, color=WHITE, 
             css.append(f"@keyframes {n}{{0%,{max(sa-0.01,0):.2f}%{{opacity:0}}{sa:.2f}%,{sb:.2f}%{{opacity:1}}"
                        f"{min(sb+0.01,100):.2f}%,100%{{opacity:0}}}}.{n}{{opacity:0;animation:{n} {period}s linear infinite}}")
             out.append(f'<text class="{n}" x="{cx}" y="{cy:.1f}" font-size="{fs}" fill="{color}" text-anchor="middle">{e(g)}</text>')
-        out.append(f'<line x1="{x}" y1="{y0+th/2:.1f}" x2="{x+tw}" y2="{y0+th/2:.1f}" stroke="{BG}" stroke-width="{2 if th > 60 else 1}" opacity="{1 if th > 60 else .55}"/>')
     return "\n".join(out), "\n".join(css)
 
 
