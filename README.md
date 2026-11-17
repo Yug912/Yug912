@@ -10,7 +10,7 @@
   <a href="https://github.com/Yug912?tab=repositories"><img src="https://img.shields.io/badge/ALL%20ROUTES-161b22?style=for-the-badge&logo=github&logoColor=58A6FF&labelColor=161b22" alt="Repositories"/></a>
 </p>
 
-<img src="board/pass.svg" alt="Boarding pass for Yug Thakral: B.Tech CSE at JIIT Noida, Technical Lead at Rapid Programming Hub. LeetCode Knight, Codeforces Specialist (peak 1424), 3-star CodeChef, Flipkart GRiD 8.0 semifinalist. &quot;I like problems that won't leave my head until they're solved, whether that's a contest at midnight or a product that has to ship by Sunday.&quot;" width="100%"/>
+<p align="center"><i>“I like problems that won't leave my head until they're solved — a contest at midnight or a product that has to ship by Sunday.”</i></p>
 
 <br/>
 

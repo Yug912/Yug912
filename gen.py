@@ -256,68 +256,6 @@ def gates():
     open(f"{OUT}/gates.svg", "w").write(svg(W, H, "\n".join(b)))
 
 
-# ---------------------------------------------------------------- BOARDING PASS
-PASS_FIELDS = [("FROM", "JIIT NOIDA · B.TECH CSE"), ("CREW", "TECH LEAD · RAPID PROGRAMMING HUB")]
-PASS_CHIPS = [("LEETCODE KNIGHT", "#FFA116"), ("CF SPECIALIST · PEAK 1424", "#58A6FF"),
-              ("CODECHEF 3★", "#D0A26B"), ("GRID 8.0 SEMIFINALIST", VIOLET)]
-PASS_QUOTE = ["“I like problems that won't leave my head until they're solved —",
-              "a contest at midnight or a product that has to ship by Sunday.”"]
-PASS_STUB = [("FLIGHT", "YT 912"), ("GATE", "A1"), ("BOARDS", "00:00"), ("CLASS", "KNIGHT")]
-
-
-def boarding_pass():
-    W, H, cut = 1200, 352, 900
-    lab = lambda x, y, t: f'<text x="{x}" y="{y}" font-size="12" fill="{GREY}" letter-spacing="3">{e(t)}</text>'
-    b = [f'<mask id="m"><rect width="{W}" height="{H}" fill="#fff"/>'
-         f'<circle cx="{cut}" cy="0" r="16" fill="#000"/><circle cx="{cut}" cy="{H}" r="16" fill="#000"/></mask>',
-         f'<linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="40" x2="420">'
-         f'<stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="{VIOLET}"/></linearGradient>',
-         f'<linearGradient id="hg" gradientUnits="userSpaceOnUse" x1="0" x2="{W}">'
-         f'<stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="{VIOLET}"/></linearGradient>',
-         f'<clipPath id="r"><rect width="{W}" height="{H}" rx="18"/></clipPath>',
-         f'<g mask="url(#m)"><g clip-path="url(#r)"><rect width="{W}" height="{H}" fill="{BG}"/>',
-         f'<rect width="{W}" height="6" fill="url(#hg)"/>',
-         f'<rect x="{cut}" y="6" width="{W-cut}" height="{H-6}" fill="{PANEL}"/>',
-         f'<line x1="{cut}" y1="24" x2="{cut}" y2="{H-24}" stroke="{LINE}" stroke-width="2" stroke-dasharray="6 7"/>']
-    # title row
-    b.append(f'<circle cx="46" cy="44" r="6" fill="{GREEN}" class="blink"/>'
-             f'<text x="62" y="51" font-size="18" fill="{WHITE}" letter-spacing="6">BOARDING PASS</text>'
-             f'<text x="{cut-40}" y="50" font-size="13" fill="{GREY}" text-anchor="end" letter-spacing="3">PLATFORM 912 → WHEREVER IT SHIPS</text>')
-    # passenger
-    b.append(lab(40, 100, "PASSENGER"))
-    b.append(f'<text x="40" y="136" font-size="34" fill="url(#pg)" letter-spacing="4">{e(NAME)}</text>')
-    for k, (l, v) in enumerate(PASS_FIELDS):
-        x = 40 + k * 330
-        b.append(lab(x, 176, l))
-        b.append(f'<text x="{x}" y="200" font-size="17" fill="{WHITE}" letter-spacing="1">{e(v)}</text>')
-    # clearance chips
-    b.append(lab(40, 236, "CLEARANCES"))
-    x = 40
-    for t, col in PASS_CHIPS:
-        w = len(t) * 8.8 + 26
-        b.append(f'<rect x="{x:.1f}" y="248" width="{w:.1f}" height="30" rx="15" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".55"/>'
-                 f'<text x="{x + w/2:.1f}" y="268" font-size="13" fill="{col}" text-anchor="middle" letter-spacing="1">{e(t)}</text>')
-        x += w + 12
-    # quote
-    for i, line in enumerate(PASS_QUOTE):
-        b.append(f'<text x="40" y="{310 + i*21}" font-size="14" fill="{GREY}" font-weight="400" xml:space="preserve">{e(line)}</text>')
-    # stub
-    for k, (l, v) in enumerate(PASS_STUB):
-        r, c = divmod(k, 2)
-        x, y = cut + 36 + c * 130, 52 + r * 72
-        b.append(lab(x, y, l))
-        b.append(f'<text x="{x}" y="{y+28}" font-size="22" fill="{PALETTE[k % len(PALETTE)]}" letter-spacing="2">{e(v)}</text>')
-    bx, by = cut + 36, 214
-    while bx < W - 40:
-        w = random.choice((2, 2, 3, 4, 6))
-        if random.random() > 0.3:
-            b.append(f'<rect x="{bx}" y="{by}" width="{w}" height="70" fill="{WHITE}" opacity=".85"/>')
-        bx += w + random.choice((2, 3, 4))
-    b.append(f'<text x="{(cut + W)/2}" y="{by+92}" font-size="12" fill="{GREY}" text-anchor="middle" letter-spacing="6">YUG912</text>')
-    b.append("</g></g>")
-    open(f"{OUT}/pass.svg", "w").write(svg(W, H, "\n".join(b)))
-
-
 # ---------------------------------------------------------------- FOOTER
 def footer():
     W, H = 1200, 64
@@ -329,6 +267,6 @@ def footer():
     open(f"{OUT}/footer.svg", "w").write(svg(W, H, body, c))
 
 
-for f in (header, departures, arrivals, scoreboard, gates, footer, boarding_pass):
+for f in (header, departures, arrivals, scoreboard, gates, footer):
     f()
 print("written to", OUT)
