@@ -259,8 +259,9 @@ def gates():
 def footer():
     W, H = 1200, 64
     msg = "THANK YOU FOR TRAVELLING WITH YUG   ·   MIND THE GAP BETWEEN IDEA AND DEPLOY   ·   NEXT DEPARTURE: YOUR REPO?   ·   "
-    t, c = ticker(msg, 40, W, 15, GREY, "ft", speed=45)
-    body = (f'<rect width="{W}" height="{H}" rx="14" fill="{BG}"/>'
+    t, c = ticker(msg, 39, W, 17, BG, "ft", speed=45)
+    body = (f'<linearGradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="{TICKER_FROM}"/><stop offset="1" stop-color="{TICKER_TO}"/></linearGradient>'
+            f'<rect width="{W}" height="{H}" rx="14" fill="url(#fg)"/>'
             f'<clipPath id="fc"><rect x="0" y="0" width="{W}" height="{H}" rx="14"/></clipPath>'
             f'<g clip-path="url(#fc)">{t}</g>')
     open(f"{OUT}/footer.svg", "w").write(svg(W, H, body, c))
